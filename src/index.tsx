@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 
 import {backgroundImg} from './assets';
+import Divider from './components/Divider';
 
 const {StatusBarManager} = NativeModules;
 
@@ -85,7 +86,7 @@ export default function App() {
             <Text style={styles.scoreButtonText}>{scoreA}</Text>
           </TouchableOpacity>
 
-          <View style={styles.divider} />
+          <Divider />
 
           <TouchableOpacity
             onPress={() => changeScoreB(1)}
